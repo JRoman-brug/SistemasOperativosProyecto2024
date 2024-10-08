@@ -36,8 +36,6 @@ void executeCommand(char command[max], char* args[numsArgs]){
         perror("Error al iniciar el proceso");
         exit(-1);
     }
-    /*
-    */
 }
 
 void prepareCommand(char input[max], char command[max], char* args[numsArgs]){
@@ -62,18 +60,6 @@ void prepareCommand(char input[max], char command[max], char* args[numsArgs]){
             token = strtok(NULL, " ");
         }else args[i++] = NULL;
     }
-    
-    /*
-    //testing
-    printf("\n\n ------Testing------\n");
-    printf("command: %s\n", command);
-
-    for(int i=0;i<numsArgs;i++){
-        if(args2[i] != "\0"){
-            printf("Arg %i: %s\n",i, args2[i]);
-        }else printf("Arg %i: NULL\n",i);
-    }
-    */
 }
 
 //Note: execvp, first: name of file, seconds params
