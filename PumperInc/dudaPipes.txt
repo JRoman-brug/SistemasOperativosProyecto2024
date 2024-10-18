@@ -1,0 +1,1 @@
+"Cada cliente espera ser atendido en una cola, aunque si hay mucha gente puede decidir marcharse y volver mas tarde"
